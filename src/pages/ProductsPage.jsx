@@ -1,8 +1,10 @@
-import React from 'react'
+import {useContext} from 'react'
+import { ProductsContext } from '../context/ProductsContext'
 
 const ProductsPage = () => {
+  const data = useContext(ProductsContext)
   return (
-    <div>ProductsPage</div>
+    <div>ProductsPage : {data}</div>
   )
 }
 
